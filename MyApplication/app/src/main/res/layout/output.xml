@@ -46,6 +46,6 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/goal"/>
+            android:text="@+id/editText"/>
     </LinearLayout>
 </LinearLayout>

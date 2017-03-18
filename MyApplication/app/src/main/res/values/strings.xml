@@ -10,4 +10,19 @@
     <string name="sesh_pot">Java</string>
     <string name="sesh_time">Java</string>
     <string name="goal">Java</string>
+    <string name="history">History</string>
+    <string name="back">back</string>
+    <string name="highscore">High Score</string>
+    <string name="score1">Score</string>
+    <string name="score2">Score</string>
+    <string name="score3">Score</string>
+    <string name="score4">Score</string>
+    <string name="score5">Score</string>
+    <string name="date1">Date</string>
+    <string name="date2">Date</string>
+    <string name="date3">Date</string>
+    <string name="date4">Date</string>
+    <string name="date5">Date</string>
+    <string name="date6">Date</string>
+
 </resources>
