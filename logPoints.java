@@ -1,12 +1,13 @@
 import java.io.*;
+import java.util.Date;
 
 public class logPoints {
 	public static void reset() {
-		int pointCurr;
 		int highscore = Integer.MAX_VALUE;
 		// The name of the file to open.
         String fileHigh = "highscore.txt";
         String fileScore = "studyBuddyLog.txt";
+        Date date = new Date();
         
         String line = null;
 
@@ -15,7 +16,7 @@ public class logPoints {
             BufferedReader bufferedReaderHigh = new BufferedReader(new FileReader(fileHigh));
             
             line = bufferedReaderHigh.readLine();
-            highscore = Integer.valueOf(line);
+            highscore = Integer.valueOf(line.split(" ")[0]);
 
             // Always close files.
             bufferedReaderHigh.close();
@@ -34,7 +35,7 @@ public class logPoints {
             BufferedReader bufferedReaderScore = new BufferedReader(new FileReader(fileScore));
             
             line = bufferedReaderScore.readLine();
-            pointCurr = Integer.valueOf(line);
+            int pointCurr = Integer.valueOf(line);
 
             // Always close files.
             bufferedReaderScore.close();
@@ -45,7 +46,7 @@ public class logPoints {
                      // Always wrap FileWriter in BufferedWriter.
                      BufferedWriter bufferedWriterHigh = new BufferedWriter(new FileWriter(fileHigh));
 
-                     bufferedWriterHigh.write(String.valueOf(pointCurr));
+                     bufferedWriterHigh.write(String.format("%d %tF",pointCurr, date));
 
                      // Always close files.
                      bufferedWriterHigh.close();
@@ -58,6 +59,25 @@ public class logPoints {
                      // Or we could just do this: 
                      // ex.printStackTrace();
                  }
+            }
+            
+            try {
+                // Always wrap FileWriter in BufferedWriter.
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("history.txt",true));
+
+                bufferedWriter.write(String.format("%d %tF",pointCurr, date));
+                bufferedWriter.newLine();
+
+                // Always close files.
+                bufferedWriter.close();
+            }
+            catch(FileNotFoundException ex) {
+                System.out.println("Unable to open file '" + fileHigh + "'");                
+            }
+            catch(IOException ex) {
+                System.out.println("Error reading file '" + fileHigh + "'");                  
+                // Or we could just do this: 
+                // ex.printStackTrace();
             }
 
             // Always wrap FileWriter in BufferedWriter.
@@ -81,7 +101,6 @@ public class logPoints {
             // Or we could just do this: 
             // ex.printStackTrace();
         }
-
 	}
 	
     public static void update(int seconds, int timeGoal) {
