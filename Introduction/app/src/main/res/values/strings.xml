@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Study Buddy</string>
+
+    <string name="history">History</string>
+    <string name="back">back</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="highscore">High Score</string>
+    <string name="score">Score</string>
+    <string name="date">Date</string>
+</resources>
