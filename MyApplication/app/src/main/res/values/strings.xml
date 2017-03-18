@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="start_button">Start\nTimer</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="total_points">Total points</string>
+    <string name="session_points">Session points</string>
+    <string name="session_time">Session Time</string>
+    <string name="goal_time">Goal Time</string>
+    <string name="tot">Java</string>
+    <string name="sesh_pot">Java</string>
+    <string name="sesh_time">Java</string>
+    <string name="goal">Java</string>
+</resources>

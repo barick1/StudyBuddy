@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_points"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/session_points"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/session_time"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/goal_time"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tot"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sesh_pot"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sesh_time"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/goal"/>
+    </LinearLayout>
+</LinearLayout>
