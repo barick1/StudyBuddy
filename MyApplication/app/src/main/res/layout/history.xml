@@ -39,7 +39,7 @@
             android:id="@+id/Highscores"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="@string/highscore"
+            android:text="@string/recent"
             android:textSize="25sp"/>
 
         <LinearLayout
@@ -97,10 +97,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/highscore"
+                    android:id="@+id/score0"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
-                    android:text="@string/highscore"
+                    android:text="@string/score0"
                     android:textSize="25sp" />
                 <TextView
                     android:id="@+id/score1"

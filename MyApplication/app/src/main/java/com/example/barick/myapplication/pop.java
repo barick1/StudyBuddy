@@ -2,7 +2,6 @@ package com.example.barick.myapplication;
 
 import android.os.CountDownTimer;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -56,6 +55,7 @@ public class pop extends AppCompatActivity{
             countDownTimer = new CountDownTimer(seconds * 1000, 1000) {
                 @Override
                 public void onTick(long millisUntilFinished) {
+
                     long minute = millisUntilFinished/60000;
                     long temp = millisUntilFinished/1000;
                     long second = temp%60;

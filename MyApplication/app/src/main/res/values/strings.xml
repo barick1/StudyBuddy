@@ -12,7 +12,8 @@
     <string name="goal">Java</string>
     <string name="history">History</string>
     <string name="back">back</string>
-    <string name="highscore">High Score</string>
+    <string name="recent">Recent Scores</string>
+    <string name="score0">Score</string>
     <string name="score1">Score</string>
     <string name="score2">Score</string>
     <string name="score3">Score</string>
