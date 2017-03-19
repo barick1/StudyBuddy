@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context="com.example.barick.myapplication.MainActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:text="History"
+        android:background="@color/buttons"
         android:id="@+id/history_button"/>
 
     <RelativeLayout
@@ -43,19 +45,23 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ha"/>
+                android:src="@drawable/ha"
+                android:id="@+id/hats"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/shade"/>
+                android:src="@drawable/shade"
+                android:id="@+id/shades"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/shirts"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pant"/>
+                android:src="@drawable/shirts"
+                android:id="@+id/shirts"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pant"
+                android:id="@+id/pants"/>
 
 
             </RelativeLayout>
@@ -73,13 +79,13 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
+            android:background="@color/buttons"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/startbutton"
-                android:background="@color/black_overlay"
+                android:background="@color/buttons"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

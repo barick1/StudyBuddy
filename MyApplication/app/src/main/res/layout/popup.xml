@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,19 +38,23 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/h"/>
+                    android:src="@drawable/h"
+                    android:id="@+id/hat"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/pan"/>
+                    android:src="@drawable/pan"
+                    android:id="@+id/pant"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/shad" />
+                    android:src="@drawable/shad"
+                    android:id="@+id/shade"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/shir" />
+                    android:src="@drawable/shir"
+                    android:id="@+id/shirt"/>
 
             </RelativeLayout>
 
@@ -74,7 +80,8 @@
                     android:shadowColor="@color/colorPrimaryDark"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
-                    android:id="@+id/editText"/></LinearLayout>
+                    android:id="@+id/editText"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,11 +90,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/start"
+                    android:background="@color/buttons"
                     android:text="Start"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/cancel"
+                    android:background="@color/buttons"
                     android:text="Cancel"/>
             </LinearLayout>
         </LinearLayout>
