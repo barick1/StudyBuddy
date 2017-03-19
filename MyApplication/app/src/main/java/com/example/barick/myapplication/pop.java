@@ -42,7 +42,6 @@ public class pop extends AppCompatActivity{
         setContentView(R.layout.popup);
 
 
-
         editText = (EditText) findViewById(R.id.editText);
 
         start = (Button) findViewById(R.id.start);

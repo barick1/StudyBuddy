@@ -44,20 +44,15 @@ public class MainActivity extends AppCompatActivity {
         if(50 > points) {
             ImageView hats = (ImageView) findViewById(R.id.hats);
             hats.setVisibility(View.INVISIBLE);
-            //ImageView hat = (ImageView) findViewById(R.id.hat);
-            //hat.setVisibility(View.INVISIBLE);
+        
         }
         if(40 > points) {
             ImageView shade = (ImageView) findViewById(R.id.shades);
             shade.setVisibility(View.INVISIBLE);
-            ImageView shades = (ImageView) findViewById(R.id.shade);
-            shades.setVisibility(View.INVISIBLE);
         }
         if(30 > points) {
             ImageView shirt = (ImageView) findViewById(R.id.shirts);
             shirt.setVisibility(View.INVISIBLE);
-            //ImageView shirts = (ImageView) findViewById(R.id.shirt);
-            //shirts.setVisibility(View.INVISIBLE);
         }
         if(20 > points) {
             ImageView pants = (ImageView) findViewById(R.id.pants);
